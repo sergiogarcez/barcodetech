@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
-import logo from '../assets/images/Barcode_logo.png';
-import facebookIcon from '../assets/icons/facebook.png';
-import instagramIcon from '../assets/icons/instagram.png';
-import linkedinIcon from '../assets/icons/linkedin.png';
+import logo from '../../assets/images/Barcode_logo.png';
+import facebookIcon from '../../assets/icons/facebook.png';
+import instagramIcon from '../../assets/icons/instagram.png';
+import linkedinIcon from '../../assets/icons/linkedin.png';
 
 const Header = () => {
   return (
