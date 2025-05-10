@@ -1,95 +1,150 @@
+/* 🔹 Alinhamento refinado da seção */
 .product-section {
-  text-align: left; /* Alinhando título à esquerda */
-  padding: 40px;
+    text-align: left;
+    padding: 80px 40px;
 }
 
+/* 🔹 Título "Nossos Produtos" moderno */
 .section-title {
-  font-size: 32px;
-  font-weight: bold;
-  color: #004d00;
-  margin-bottom: 40px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: rgba(0, 100, 0, 0.8);
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 6px;
+    width: fit-content;
+    margin-bottom: 20px;
 }
 
+/* 🔹 Linha divisória aprimorada */
+.section-divider {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #008000, #00FF66);
+    margin-bottom: 30px;
+}
+
+/* 🔹 Contêiner do produto refinado com animação */
 .product-container {
-  background: #f5f5f5;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 100, 0, 0.3);
-  width: 80%;
-  margin: auto;
+    background: #FFFFFF;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 100, 0, 0.3);
+    width: 85%;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
 }
 
+.product-container:hover {
+    transform: scale(1.02);
+}
+
+/* 🔹 Layout flexível e estruturado */
 .product-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
+/* 🔹 Centralizando e refinando a imagem do produto */
 .product-image-wrapper {
-  flex: 1;
+    flex: 1;
+    text-align: center;
 }
 
 .product-image {
-  width: 300px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 100, 0, 0.4);
+    width: 320px;
+    height: 220px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Informações do produto refinadas */
 .product-info {
-  flex: 1;
-  text-align: center;
+    flex: 2;
+    text-align: left;
 }
 
+/* 🔹 Título do produto */
 .product-title {
-  font-size: 22px;
-  color: #333;
-  margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
+/* 🔹 Descrição rápida */
+.product-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Botão de ação moderno */
 .view-products {
-  display: block;
-  margin: auto;
-  padding: 12px 18px;
-  font-size: 18px;
-  background-color: #004d00;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
+    padding: 14px 24px;
+    font-size: 20px;
+    background: linear-gradient(green);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 12px rgba(0, 100, 0, 0.3);
 }
 
 .view-products:hover {
-  background-color: #008000;
+    background: radial-gradient( #00FF66);
+    transform: scale(1.1);
 }
 
-/* Estilo das categorias seguindo o formato de abas */
+/* 🔹 Categorias refinadas com animação */
 .category-tabs {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: 15px;
-  overflow-x: auto;
-  border-bottom: 2px solid #004d00;
-  margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
+/* 🔹 Estilo moderno das categorias */
 .category-tab {
-  background-color: transparent;
-  color: #333;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
-  transition: 0.3s;
+    background: transparent;
+    color: #777;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+/* 🔹 Aba ativa com linha de destaque */
 .category-tab.active {
-  color: #00FF00;
-  border-bottom: 2px solid #00FF00;
+    color: rgba(0, 100, 0, 0.8);
 }
 
+.category-tab.active::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgba(0, 100, 0, 0.8);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* 🔹 Efeito de zoom ao passar o mouse */
 .category-tab:hover {
-  color: #008000;
+    color: #333;
+    transform: scale(1.1);
 }
