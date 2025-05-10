@@ -17,10 +17,13 @@ const ProductSelection = () => {
   return (
     <section className="product-section">
       <h1 className="section-title">Nossos Produtos</h1>
+      <div className="section-divider"></div> {/* Linha verde separando a seção */}
+
+      {/* 🔹 Contêiner do Produto com borda adicionada */}
       <div className="product-container">
-        
-        {/* Conteúdo do Produto com Imagem Centralizada */}
         <div className="product-content">
+          
+          {/* 🔹 Imagem do produto centralizada e fixa */}
           <div className="product-image-wrapper">
             <img 
               src={categories[selectedCategory].img} 
@@ -28,6 +31,8 @@ const ProductSelection = () => {
               className="product-image" 
             />
           </div>
+          
+          {/* 🔹 Informações do produto */}
           <div className="product-info">
             <h2 className="product-title">{categories[selectedCategory].name}</h2>
             <p className="product-description">{categories[selectedCategory].description}</p>
@@ -35,7 +40,7 @@ const ProductSelection = () => {
           </div>
         </div>
 
-        {/* Abas de Categorias Centralizadas e Estilizadas */}
+        {/* 🔹 Categorias organizadas e estilizadas */}
         <div className="category-tabs" role="tablist" aria-orientation="horizontal">
           {Object.keys(categories).map((category) => (
             <button

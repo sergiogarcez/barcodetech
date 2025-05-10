@@ -1,75 +1,124 @@
-/* Seção mais espaçada e organizada */
+/* 🔹 Seção organizada */
 .product-section {
-    text-align: left; /* Alinhado à esquerda */
-    padding: 100px 40px;
-    background: transparent;
+    text-align: left;
+    padding: 80px 40px;
 }
 
-/* 🔹 Título "Nossos Produtos" alinhado à esquerda com fundo aplicado */
+/* 🔹 Alinhando o título e a linha à seção */
 .section-title {
     font-size: 36px;
     font-weight: bold;
-    color: #FFFFFF;
-    background: rgba(0, 100, 0, 0.8);
+    color: rgba(0, 100, 0, 0.8);
     padding: 10px 20px;
-    display: inline-block;
+    display: block; /* Garante que siga a largura do container */
     border-radius: 6px;
+    width: 85%; /* Mesma largura do contêiner */
+    margin: 0 auto 20px; /* Centraliza */
+}
+
+/* 🔹 Linha divisória verde alinhada */
+.section-divider {
+    width: 85%; /* Mesma largura do container */
+    height: 3px;
+    background-color: #008000;
+    margin: 0 auto 40px; /* Ajusta espaçamento */
+}
+/* 🔹 Contêiner do produto refinado */
+.product-container {
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 100, 0, 0.3);
+    width: 85%;
+    margin: auto;
+}
+
+/* 🔹 Layout flexível */
+.product-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* 🔹 Garantindo que todas as imagens fiquem no mesmo tamanho */
+.product-image-wrapper {
+    flex: 1;
+    text-align: center;
+    display: flex; /* Distribui corretamente */
+    justify-content: center; /* Centraliza as imagens */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* 🔹 Ajustando tamanho fixo e prevenindo distorção */
+.product-image {
+    width: 300px;
+    height: 200px;
+    max-width: 100%; /* Garante que não ultrapasse o tamanho do container */
+    max-height: 200px; /* Mantém altura fixa */
+    border-radius: 12px;
+    object-fit: cover; /* Mantém proporção sem distorcer */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 🔹 Informações do produto */
+.product-info {
+    flex: 2;
     text-align: left;
 }
 
-/* 🔹 Linha divisória verde entre as seções */
-.section-divider {
-    width: 100%;
-    height: 3px;
-    background-color: #008000; /* Linha verde */
-    margin: 40px 0;
+/* 🔹 Título do produto */
+.product-title {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-/* 🔹 Contêiner do produto com borda adicionada */
-.product-container {
-    background: #FFFFFF;
-    padding: 60px;
-    border-radius: 12px;
-    box-shadow: 0px 8px 24px rgba(0, 100, 0, 0.3);
-    width: 90%;
-    margin: auto;
-    border: 2px solid #008000; /* Borda verde */
+/* 🔹 Descrição rápida */
+.product-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
-/* 🔹 Centralizando a imagem do produto */
-.product-image-wrapper {
-    text-align: center; /* Garante alinhamento ao centro */
+/* 🔹 Botão de ação */
+.view-products {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: rgba(0, 100, 0, 0.8);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-/* 🔹 Ajustando tamanho e border-radius */
-.product-image {
-    width: 300px; /* Tamanho fixo */
-    height: 200px; /* Mantendo proporções uniformes */
-    border-radius: 12px; /* Bordas arredondadas para suavidade */
-    object-fit: cover; /* Evita distorção e mantém proporção */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Suave efeito de sombra */
+.view-products:hover {
+    background-color: #004d00;
+    transform: scale(1.1);
 }
 
-
-/* 🔹 Centralizando as categorias */
+/* 🔹 Categorias centralizadas */
 .category-tabs {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 50px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-/* 🔹 Ajuste das abas */
+/* 🔹 Estilo das categorias */
 .category-tab {
     background: transparent;
     color: #777;
     font-size: 18px;
     font-weight: bold;
     padding: 12px 24px;
-    cursor: pointer;
     border: none;
+    cursor: pointer;
     position: relative;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Adicionando transição */
 }
 
 /* 🔹 Aba ativa com linha verde */
@@ -88,6 +137,8 @@
     left: 0;
 }
 
+/* 🔹 Efeito de zoom ao passar o mouse */
 .category-tab:hover {
     color: #333;
+    transform: scale(1.1); /* Aplicando efeito de zoom */
 }
