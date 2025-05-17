@@ -88,34 +88,37 @@ const ProductSelection = () => {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   return (
-    <div className="product-selection">
-      {/* Seletor de categorias */}
-      <div className="category-selector">
-        {categories.map((category) => (
-          <button
-            key={category}
-            className={selectedCategory === category ? "active" : ""}
-            onClick={() => setSelectedCategory(category)}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
-
-      {/* Lista de produtos */}
-      <div className="product-list">
-        {productsData
-          .filter((product) => product.category === selectedCategory)
-          .map((product, index) => (
-            <div key={index} className="product-card">
-              <img src={product.image} alt={product.name} />
-              <h3>{product.name}</h3>
-              <p>{product.description}</p>
-              <button className="saiba-mais">Saiba Mais</button>
-            </div>
+    <section className="product-section-container">
+      <h2>Produtos em destaque</h2>
+      <div className="product-selection">
+        {/* Seletor de categorias */}
+        <div className="category-selector">
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={selectedCategory === category ? "active" : ""}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
           ))}
+        </div>
+
+        {/* Lista de produtos */}
+        <div className="product-list">
+          {productsData
+            .filter((product) => product.category === selectedCategory)
+            .map((product, index) => (
+              <div key={index} className="product-card">
+                <img src={product.image} alt={product.name} />
+                <h3>{product.name}</h3>
+                <p>{product.description}</p>
+                <button className="saiba-mais">Saiba Mais</button>
+              </div>
+            ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
