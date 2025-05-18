@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/header.css'
 import logo from '../assets/images/Barcode_logo.png';
 import facebookIcon from '../assets/icons/facebook.png';
