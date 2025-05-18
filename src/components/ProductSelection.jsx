@@ -123,10 +123,11 @@ const ProductSelection = () => {
               <div className="main-product-container">
                 <div className="main-product-image-card">
                   <img src={mainProduct.image} alt={mainProduct.name} />
+                </div>
+                <div className="main-product-info-card">
+                  <div className="main-product-name">{mainProduct.name}</div>
+                  <div className="main-product-description">{mainProduct.description}</div>
                   <button className="saiba-mais">Saiba Mais</button>
-                  <div className="main-product-name-card">
-                    <div className="main-product-name">{mainProduct.name}</div>
-                  </div>
                 </div>
               </div>
             </>
