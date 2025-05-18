@@ -1,4 +1,4 @@
-.product-section-container h2 {
+ .product-section-container h2 {
   font-family: 'Exo', sans-serif;
   font-size: 28px;
   font-weight: bold;
@@ -71,7 +71,7 @@
 .main-product-image-card {
   background-color: #e0e0e0;
   border-radius: 12px;
-  padding: 20px;
+  padding: 12px 20px 20px 20px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
   text-align: center;
   display: flex;
@@ -96,28 +96,30 @@
 }
 
 .main-product-name-card {
-  background-color: #e0e0e0;
-  border-radius: 12px;
-  padding: 12px 20px;
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
-  margin-top: 12px;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  margin-top: 8px;
   text-align: center;
-  flex: 1 1 35%;
-  max-width: 400px;
+  flex: none;
+  max-width: none;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .main-product-name {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #004d00;
+  margin-top: 8px;
 }
 
 
 .other-products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(261px, 1fr));
-  gap: 12px;
+  gap: 32px;
   align-content: start;
   flex: 1 1 60%;
   max-width: 900px;
@@ -128,7 +130,7 @@
 .product-card {
   background-color: #e0e0e0;
   border-radius: 12px;
-  padding: 12px;
+  padding: 8px 12px 12px 12px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
   text-align: center;
   display: flex;
@@ -138,8 +140,8 @@
   cursor: pointer;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   opacity: 1;
-  width: 261px;
-  height: 261px;
+  width: 280px;
+  height: auto;
   box-sizing: border-box;
 }
 
@@ -156,7 +158,7 @@
   position: static;
   opacity: 1;
   pointer-events: auto;
-  margin-top: 4px;
+  margin-top: 8px;
   transform: none;
   bottom: auto;
   left: auto;
@@ -172,9 +174,10 @@
 }
 
 .product-card img {
-  width: 261px;
-  height: 261px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
   border-radius: 8px;
   transition: transform 0.4s ease;
 }
@@ -186,8 +189,10 @@
 .product-card h3 {
   font-size: 16px;
   font-weight: bold;
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
   color: #004d00;
+  width: 100%;
+  text-align: center;
 }
 
 .saiba-mais {
@@ -201,7 +206,7 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
   opacity: 0;
   position: static;
-  margin-top: 12px;
+  margin-top: 8px;
   pointer-events: none;
   align-self: center;
   transform: none;

@@ -124,9 +124,9 @@ const ProductSelection = () => {
                 <div className="main-product-image-card">
                   <img src={mainProduct.image} alt={mainProduct.name} />
                   <button className="saiba-mais">Saiba Mais</button>
-                </div>
-                <div className="main-product-name-card">
-                  <div className="main-product-name">{mainProduct.name}</div>
+                  <div className="main-product-name-card">
+                    <div className="main-product-name">{mainProduct.name}</div>
+                  </div>
                 </div>
               </div>
             </>
