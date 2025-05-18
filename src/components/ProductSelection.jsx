@@ -9,6 +9,9 @@ import HONEYWELL_1960G from "../assets/images/leitores-c-fio/HONEYWELL_1960G.web
 import ZEBRA_DS2208 from "../assets/images/leitores-c-fio/ZEBRA_DS2208.jpeg";
 
 import HONEYWELL_1962G from "../assets/images/leitores-s-fio/HONEYWELL_1962G.jpeg";
+import ZEBRA_2278 from "../assets/images/leitores-s-fio/ZEBRA_2278.png";
+import UROVO_5203 from "../assets/images/leitores-s-fio/UROVO_5203.png";
+
 import ZD400 from "../assets/images/impressoras/ZD400.png";
 import ZD510_HC from "../assets/images/impressoras/ZD510‑HC.png";
 import ZD600 from "../assets/images/impressoras/ZD600.png";
@@ -52,10 +55,22 @@ const productsData = [
 
 // CATEGORIA: LEITORES SEM FIO
   {
-    name: "UROVO 5203 BT",
+    name: "HONEYWELL 1962G",
     description: "Leitor sem fio via Bluetooth.",
     category: "Leitores Sem Fio",
     image: HONEYWELL_1962G,
+  },
+  {
+    name: "ZEBRA 2278",
+    description: "Leitor sem fio via Bluetooth.",
+    category: "Leitores Sem Fio",
+    image: ZEBRA_2278,
+  },
+  {
+    name: "UROVO 5203",
+    description: "Leitor sem fio via Bluetooth.",
+    category: "Leitores Sem Fio",
+    image: UROVO_5203,
   },
 
 

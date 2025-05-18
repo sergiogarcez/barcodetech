@@ -178,10 +178,9 @@
 }
 
 .product-card img {
-  width: 100%;
-  height: auto;
-  max-height: 220px;
-  object-fit: contain;
+  width: 280px;
+  height: 220px;
+  object-fit: cover;
   border-radius: 8px;
   transition: transform 0.4s ease;
 }
