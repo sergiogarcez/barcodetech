@@ -88,6 +88,16 @@ const categories = [...new Set(productsData.map((product) => product.category))]
 const ProductSelection = () => {
   const [selectedCategory, setSelectedCategory] = React.useState(categories[0]);
 
+  // Filtra os produtos da categoria selecionada
+  const filteredProducts = productsData.filter(
+    (product) => product.category === selectedCategory
+  );
+
+  // Define o produto principal como o primeiro da lista filtrada
+  const mainProduct = filteredProducts[0];
+  // Os demais produtos
+  const otherProducts = filteredProducts.slice(1);
+
   return (
     <section className="product-section-container">
       <h2>Produtos em destaque</h2>
@@ -105,18 +115,33 @@ const ProductSelection = () => {
           ))}
         </div>
 
-        {/* Lista de produtos */}
-        <div className="product-list">
-          {productsData
-            .filter((product) => product.category === selectedCategory)
-            .map((product, index) => (
+        {/* Lista de produtos em grid */}
+        <div className="product-list-grid">
+          {/* Produto principal */}
+          {mainProduct && (
+            <>
+              <div className="main-product-container">
+                <div className="main-product-image-card">
+                  <img src={mainProduct.image} alt={mainProduct.name} />
+                  <button className="saiba-mais">Saiba Mais</button>
+                </div>
+                <div className="main-product-name-card">
+                  <div className="main-product-name">{mainProduct.name}</div>
+                </div>
+              </div>
+            </>
+          )}
+
+          {/* Outros produtos */}
+          <div className="other-products-grid">
+            {otherProducts.map((product, index) => (
               <div key={index} className="product-card">
                 <img src={product.image} alt={product.name} />
                 <h3>{product.name}</h3>
-                <p>{product.description}</p>
                 <button className="saiba-mais">Saiba Mais</button>
               </div>
             ))}
+          </div>
         </div>
       </div>
     </section>
