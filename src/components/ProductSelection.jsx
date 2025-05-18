@@ -115,7 +115,8 @@ const ProductSelection = () => {
 
   return (
     <section className="product-section-container">
-      <h2>Produtos em destaque</h2>
+      {/* New fixed heading */}
+      <h2 className="fixed-heading">Produtos em destaque</h2>
       <div className="product-selection">
         {/* Seletor de categorias */}
         <div className="category-selector">
