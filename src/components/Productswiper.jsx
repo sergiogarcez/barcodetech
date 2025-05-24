@@ -16,24 +16,24 @@ const slides = [
   {
     id: 2,
     image: 'https://source.unsplash.com/random/300x400?2',
-    title: 'Título 2'
+    title: 'Equipamento'
   },
   {
     id: 3,
     image: 'https://source.unsplash.com/random/300x400?3',
-    title: 'Título 3'
+    title: 'Equipamento'
   },
 
 ];
 
 const CustomSwiper = () => {
   return (
-    <div className="container">
+    <div className="containerr">
       <SwiperReact
         modules={[Navigation, EffectCoverflow]}
         slidesPerView={3}
         centeredSlides={true}
-        loop={true}
+        loop={false}
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
