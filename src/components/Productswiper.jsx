@@ -4,9 +4,7 @@ import { Navigation, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
-import '../styles/productswiper.css';
 
-// Importe as imagens ou use URLs
 const slides = [
   {
     id: 1,
@@ -23,12 +21,11 @@ const slides = [
     image: 'https://source.unsplash.com/random/300x400?3',
     title: 'Equipamento'
   },
-
 ];
 
 const CustomSwiper = () => {
   return (
-    <div className="containerr">
+    <div className="max-w-[1200px] mx-auto py-10">
       <SwiperReact
         modules={[Navigation, EffectCoverflow]}
         slidesPerView={3}
@@ -60,21 +57,25 @@ const CustomSwiper = () => {
             spaceBetween: 30
           }
         }}
-        className="swiper-container"
+        className="w-full py-12"
       >
         {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <div className="card">
-              <div className="image-container">
-                <img src={slide.image} alt={`Imagem ${slide.id}`} />
+          <SwiperSlide key={slide.id} className="transition-all duration-300 ease-in-out blur-[3px] scale-85 swiper-slide-blur">
+            <div className="bg-white rounded-[10px] overflow-hidden shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-full flex flex-col group">
+              <div className="w-full h-[300px] overflow-hidden">
+                <img 
+                  src={slide.image} 
+                  alt={`Imagem ${slide.id}`}
+                  className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                />
               </div>
-              <h3 className="card-title">{slide.title}</h3>
+              <h3 className="p-[15px] text-center text-lg text-[#333]">{slide.title}</h3>
             </div>
           </SwiperSlide>
         ))}
-        
-        <div className="swiper-button-next"></div>
-        <div className="swiper-button-prev"></div>
+               
+        <div className="swiper-button-next !text-[#333]"></div>
+        <div className="swiper-button-prev !text-[#333]"></div>
       </SwiperReact>
     </div>
   );
