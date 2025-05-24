@@ -114,7 +114,7 @@ const ProductSelection = () => {
   const otherProducts = filteredProducts.slice(1);
 
   return (
-    <section className="bg-white p-5 box-border">
+    <section className="p-5 box-border">
       {/* New fixed heading */}
       <h2 className="fixed-heading">Produtos em destaque</h2>
       <div className="product-selection">
