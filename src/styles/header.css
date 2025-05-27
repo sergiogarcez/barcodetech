@@ -33,10 +33,9 @@
   padding: 12px 18px;
   text-decoration: none;
   color: black;
-  font-family: 'Exo'; /* Fonte moderna */
   letter-spacing: 1px; /* Espaçamento entre letras */
 
-  font-weight: bold;
+  font-weight: normal;
   transition: all 0.4s ease-in-out;
 }
 

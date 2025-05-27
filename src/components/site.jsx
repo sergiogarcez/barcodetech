@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
+import Footer from './footer';
 import CustomSwiper from './Productswiper';
-import '../styles/site.css';
 import ProductSelection from './ProductSelection';
+import HeroSectionVideo from './VideoSection';
 
+import '../styles/site.css';
 
 
 const Layout = ({ children }) => {
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
             <ProductSelection />
           </div>
         </section>
+        <HeroSectionVideo/>
         
         {/* Seção 2: Swiper abaixo */}
         <section className="w-full">

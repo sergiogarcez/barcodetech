@@ -11,7 +11,7 @@ const Header = () => {
       <div className="logo">
         <img src={logo} alt="Barcode" />
       </div>
-      <nav className="nav">
+      <nav className="nav font-serif">
         <ul>
           <li><a href="#">Início</a></li>
           <li><a href="#">Produtos</a></li>

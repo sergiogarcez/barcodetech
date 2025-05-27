@@ -9,17 +9,17 @@ const slides = [
   {
     id: 1,
     image: 'src/assets/images/teste.png',
-    title: 'Equipamento'
+    title: 'Computadores Móveis'
   },
   {
     id: 2,
-    image: 'https://source.unsplash.com/random/300x400?2',
-    title: 'Equipamento'
+    image: 'src/assets/images/impressoras/ZD600.png',
+    title: 'Impressoras'
   },
   {
     id: 3,
-    image: 'https://source.unsplash.com/random/300x400?3',
-    title: 'Equipamento'
+    image: 'src/assets/images/scanners/scanner_geral.png',
+    title: 'Scanners'
   },
 ];
 
@@ -69,7 +69,7 @@ const CustomSwiper = () => {
                   className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
               </div>
-              <h3 className="p-[15px] text-center text-lg text-[#333]">{slide.title}</h3>
+              <h3 className="p-[15px] text-center md:text-xl font-sans text-[#333]">{slide.title}</h3>
             </div>
           </SwiperSlide>
         ))}
