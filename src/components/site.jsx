@@ -6,6 +6,7 @@ import ProductSelection from './ProductSelection';
 import HeroSectionVideo from './VideoSection';
 
 import '../styles/site.css';
+import ProductGrid from './ProductGrid';
 
 
 const Layout = ({ children }) => {
@@ -20,11 +21,7 @@ const Layout = ({ children }) => {
           </div>
         </section>
         <HeroSectionVideo/>
-        
-        {/* Seção 2: Swiper abaixo */}
-        <section className="w-full">
-          <CustomSwiper />
-        </section>
+        <ProductGrid/>
       </main>
       <Footer />
     </div>

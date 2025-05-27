@@ -1,6 +1,6 @@
 .product-section-container h2 {
-  font-family: 'Exo', sans-serif;
-  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 38px;
   font-weight: bold;
   color: #006400;
   margin-bottom: 30px;
@@ -26,7 +26,6 @@
   margin-bottom: 30px;
   width: 100%;
   max-width: 960px;
-  box-sizing: border-box;
   position: relative;
   z-index: 10;
   background-color: transparent;
@@ -34,20 +33,14 @@
 
 .category-selector button {
   padding: 14px 22px;
-  border: none;
   font-size: 18px;
   font-weight: bold;
   border-radius: 12px;
-  background-color: #e0e0e0;
-  color: #333;
+  background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.category-selector button:hover {
-  background-color: #c8e6c9;
-  transform: scale(1.05);
-}
 
 .category-selector button.active {
   background-color: #008000;
@@ -63,11 +56,12 @@
   justify-content: center;
   box-sizing: border-box;
   overflow: hidden;
+  margin-bottom: 36px;
 }
 
 
 .main-product-image-card {
-  background-color: #e0e0e0;
+  background-color: white;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
@@ -94,7 +88,7 @@
 }
 
 .main-product-name-card {
-  background-color: #e0e0e0;
+  background-color: white;
   border-radius: 12px;
   padding: 12px 20px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
@@ -122,11 +116,12 @@
 }
 
 .product-card {
-  background-color: #e0e0e0;
+  background-color: white;
   border-radius: 12px;
   padding: 12px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
   text-align: center;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,13 +130,14 @@
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   opacity: 1;
   min-height: 220px; /* increased height for other product cards */
+  min-width: 140px
 }
 
 .product-card h3 {
   margin-bottom: 8px;
 }
 
-.saiba-mais {
+.saiba-mais-pg{
   position: static;
   opacity: 1;
   pointer-events: auto;
@@ -150,17 +146,24 @@
   bottom: auto;
   left: auto;
   padding: 6px 12px;
+  background-color: #008000;
+  color: white;
   font-size: 14px;
   border-radius: 6px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.product-card:hover .saiba-mais {
+.saiba-mais-pg:hover {
+  background-color: #006400;
+}
+
+.product-card:hover .saiba-mais-pg {
   opacity: 1;
   pointer-events: auto;
   background-color: #006400;
   transform: scale(1.05);
 }
+
 
 .product-card:hover {
   transform: scale(1.05);

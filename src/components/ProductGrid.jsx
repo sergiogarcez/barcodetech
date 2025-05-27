@@ -1,4 +1,4 @@
-import '../styles/ProductSelection.css';
+import '../styles/ProductGrid.css';
 import * as React from 'react';
 
 import HONEYWELL_EDA52 from "../assets/images/coletores/HONEYWELL_EDA52.jpeg";
@@ -100,7 +100,7 @@ const ProductGrid = () => {
 
   return (
     <section className="product-section-container">
-      <h2>Produtos em destaque</h2>
+      <h2 className='mt-10'>Categorias</h2>
       <div className="product-selection">
         {/* Seletor de categorias */}
         <div className="category-selector">
@@ -123,7 +123,7 @@ const ProductGrid = () => {
               <div className="main-product-container">
                 <div className="main-product-image-card">
                   <img src={mainProduct.image} alt={mainProduct.name} />
-                  <button className="saiba-mais">Saiba Mais</button>
+                  <button className="saiba-mais-pg">Saiba Mais</button>
                 </div>
                 <div className="main-product-name-card">
                   <div className="main-product-name">{mainProduct.name}</div>
@@ -138,7 +138,7 @@ const ProductGrid = () => {
               <div key={index} className="product-card">
                 <img src={product.image} alt={product.name} />
                 <h3>{product.name}</h3>
-                <button className="saiba-mais">Saiba Mais</button>
+                <button className="saiba-mais-pg">Saiba Mais</button>
               </div>
             ))}
           </div>

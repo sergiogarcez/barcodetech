@@ -43,7 +43,7 @@
 }
 
 /* Style for Saiba Mais button */
-.saiba-mais {
+.saiba-mais-ps {
   background-color: #008000;
   color: white;
   border: none;
@@ -53,7 +53,7 @@
   transition: background-color 0.3s ease;
 }
 
-.saiba-mais:hover {
+.saiba-mais-ps:hover {
   background-color: #006400;
 }
 

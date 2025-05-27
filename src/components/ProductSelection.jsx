@@ -140,7 +140,7 @@ const ProductSelection = () => {
                 <h3 className="p-[15px] text-center text-lg text-[#333]">{product.name}</h3>
                 <p className="p-[10px] text-center text-base text-[#555]">{product.description}</p>
                 <div className="text-center mt-auto">
-                  <button className="saiba-mais">Saiba Mais</button>
+                  <button className="saiba-mais-ps">Saiba Mais</button>
                 </div>
               </div>
             </SwiperSlide>
