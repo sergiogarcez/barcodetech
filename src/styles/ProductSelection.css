@@ -60,12 +60,13 @@
 /* Style for Produtos em destaque heading */
 .fixed-heading {
   color: #008000;
-  text-align: left;
+  text-align: center;
   font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   font-size: 1.75rem;
   margin-bottom: 1rem;
   width: 100%;
+  
 }
 
 /* Style for product names */
