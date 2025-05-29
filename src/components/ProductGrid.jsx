@@ -100,7 +100,7 @@ const ProductGrid = () => {
 
   return (
     <section className="product-section-container">
-      <h2 className='mt-10'>Categorias em Destaque</h2>
+      <h2 className='mt-10 font-montserrat-bold'>Categorias em Destaque</h2>
       <div className="product-selection">
         {/* Seletor de categorias */}
         <div className="category-selector">

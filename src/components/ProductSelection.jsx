@@ -108,7 +108,7 @@ const ProductSelection = () => {
   return (
     <section className="p-5 box-border">
       {/* New fixed heading */}
-      <h2 className="fixed-heading">Produtos em destaque</h2>
+      <h2 className="fixed-heading font-montserrat-bold">Produtos em destaque</h2>
       <div className="ps-product-selection">
         {/* Lista de produtos em swiper */}
         <SwiperReact
@@ -129,7 +129,7 @@ const ProductSelection = () => {
         >
           {productsData.map((product, index) => (
             <SwiperSlide key={index} className="transition-all duration-300 ease-in-out">
-              <div className="bg-white rounded-[10px] overflow-hidden shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-full flex flex-col group" style={{ minWidth: '280px' }}>
+              <div className="bg-white rounded-[10px] overflow-hidden shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-full flex flex-col group font-roboto" style={{ minWidth: '280px' }}>
                 <div className="w-full h-[280px] overflow-hidden">
                   <img 
                     src={product.image} 

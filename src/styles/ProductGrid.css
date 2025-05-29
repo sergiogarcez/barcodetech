@@ -1,11 +1,10 @@
 .product-section-container h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 38px;
   font-weight: bold;
-  color: #006400;
+  font-size: 2.30rem;;
+  font-weight: 700;
+  color: #008000;
   margin-bottom: 30px;
   text-align: center;
-  letter-spacing: 1.2px;
 }
 
 .product-selection {
